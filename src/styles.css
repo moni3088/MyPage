@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  padding: 0px;
+  margin: 0px;
+  background: url('./assets/images/rsz_21rsz_astronomy-background-constellation-355887.jpg');
+  opacity: 1;
+}

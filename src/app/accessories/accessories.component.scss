@@ -1,0 +1,26 @@
+@import "./../styles/breakpoints";
+@import "./../styles/colours";
+@import "./../styles/fonts";
+
+.main-general-card-footer{
+  background-color: $background_primary;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  #footer{
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    /* justify-content: center; */
+    display: flex;
+    p{
+      margin: 0px;
+      padding-right: 5px;
+      font-size: 10px;
+    }
+    a{
+      margin: 0px;
+      padding-left: 5px;
+    }
+  }
+}

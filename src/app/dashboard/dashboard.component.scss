@@ -1,0 +1,179 @@
+@import "./../styles/breakpoints";
+@import "./../styles/colours";
+@import "./../styles/fonts";
+
+/*$small  : 600px;*/
+body, html{
+  padding: 0px;
+  margin: 0px;
+  height:100%;
+  background-color: $background_primary;
+}
+.main-details {
+  padding: 0px;
+  margin: 0px;
+  height:100%;
+  width: 100%;
+  background-color: $background_primary;
+  /*display: inline-block;*/
+  .main-details-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('./../../assets/images/rsz_21rsz_astronomy-background-constellation-355887.jpg');
+    opacity: 1;
+    .main-details-card-header{
+      flex-direction: column;
+      padding: 20px;
+      align-items: center;
+      padding-top: 50px;
+      #main-img-container{
+        display: flex;
+        justify-content: center;
+        #main-img{
+          border-radius: 50%;
+          border-style: double;
+          border-color: $background_primary;
+          max-height: 200px;
+          max-width: 200px;
+        }
+      }
+      .title{
+        padding-top: 30px;
+        font-family: $font_top;
+        font-weight: bold;
+        font-size: xx-large;
+        color: $background_primary;
+        vertical-align: middle;
+      }
+    }
+    .main-details-card-content{
+      padding: 20px;
+      color: $background_primary;
+      align-items: center;
+      font-size: xx-large;
+      font-weight: bold;
+    }
+  }
+  .contact-details-container{
+    min-width: 300px;
+    background-color: $background_secondary;
+    .contact-data-container{
+      display: flex;
+      flex-direction: row;
+      font-family: $font1;
+
+    }
+  }
+}
+#final-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .experience-education-projects-container{
+    width: 45%;
+    margin: 5px;
+    display: block;
+    .top-card-title{
+      p{
+        text-align: center;
+        line-height: 100px;
+        margin: 0px;
+        font-size: large;
+        font-family: lato;
+        font-weight: bold;
+      }
+    }
+    .experience-education-container-card{
+      .top-card-title{
+        font-weight: bold;
+        font-size: large;
+        font-family: arial;
+      }
+      .card-title-main{
+        display: inline-flex;
+        align-items: center;
+        p{
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+/*$small-medium: 700px;*/
+@include breakpoint($small-medium){
+  #main-canvas {
+    .main-details {
+      .main-details-card{
+        flex-direction: row;
+        .main-details-card-header{
+          flex-direction: row;
+          #main-img{
+            border-radius: 50%;
+            max-height: 200px;
+            max-width: 200px
+          }
+          .title{
+          }
+        }
+      }
+    }
+    .main-details-general{
+      .main-general-card{
+        display: flex;
+        flex-direction: row;
+        .main-general-card-header{
+        }
+        .main-general-card-content{
+        }
+      }
+    }
+  }
+  #final-container{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: unset;
+    .experience-education-projects-container{
+     /* width: 45%;
+      margin: 5px;
+      .top-card-title{
+        p{
+          text-align: center;
+          line-height: 100px;
+          margin: 0px;
+          font-size: large;
+          font-family: lato;
+          font-weight: bold;
+        }
+      }
+      .experience-education-container-card{
+        .top-card-title{
+          font-weight: bold;
+          font-size: large;
+          font-family: arial;
+        }
+        .card-title-main{
+          display: inline-flex;
+          align-items: center;
+          p{
+            margin-left: 10px;
+          }
+        }
+      }*/
+    }
+  }
+}
+
+/*$medium : 900px;*/
+@include breakpoint($medium-large){
+}
+
+/*$large-large: 1000px;*/
+@include breakpoint($large-large){
+}
+
+/*$extra-large: 1200px;*/
+@include breakpoint($extra-large){
+}
